@@ -1,0 +1,8 @@
+backend/.env
+frontendauth/.env
+
+backend/dist/
+frontendauth/dist/
+
+backend/node_modules/
+frontendauth/node_modules/
