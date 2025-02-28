@@ -27,8 +27,9 @@ const port = process.env.PORT || 3000;
 // })
 app.use('/auth',router);
 app.use('/user', userRouter);
-
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 app.listen(port, (req,res)=> {
     console.log(`Server is running on port ${port}`);
-    res.send('Server is running')
 })
