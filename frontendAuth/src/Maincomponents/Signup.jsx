@@ -69,7 +69,7 @@ const Signup = () => {
     setIsLoading(true);
     try {
       const response = await axios.post(
-        `${backendUrl}/auth/register`,
+        `${backendUrl}auth/register`,
         formData,
         { withCredentials: true }
       );
