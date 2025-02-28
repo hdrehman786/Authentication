@@ -19,7 +19,7 @@ const ResetPassword = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://localhost:3000/auth/sentpassresetotp',
+        'https://authentication-wine-mu.vercel.app/auth/sentpassresetotp',
         { email }
       );
       if (response.status === 200) {

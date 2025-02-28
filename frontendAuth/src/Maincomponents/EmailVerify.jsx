@@ -16,7 +16,7 @@ const EmailVerify = () => {
     e.preventDefault();
     try{
       axios.defaults.withCredentials =true;
-      const response = await axios.post('http://localhost:3000/auth/verifyOtp', {
+      const response = await axios.post('https://authentication-wine-mu.vercel.app/auth/verifyOtp', {
         otp,
       });
       if(response.status === 200){

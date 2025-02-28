@@ -10,7 +10,7 @@ const Navbar = () => {
   const logout = async (req, res) => {
     try {
       axios.defaults.withCredentials = true;
-      const response = await axios.post('http://localhost:3000/auth/logout');
+      const response = await axios.post('https://authentication-wine-mu.vercel.app/auth/logout');
       if (response.status === 200) {
         setIsLoggedIn(false);
         setUserData(null);
