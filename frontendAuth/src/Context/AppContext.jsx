@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
    const [isLoggedIn, setIsLoggedIn] = useState(false);
    const [userData, setUserData] = useState(null);
-   const backendUrl = 'https://authentication-wine-mu.vercel.app/';
+   const backendUrl = 'https://authentication-wine-mu.vercel.app';
 
 
    const isAuthenticated = async (user) =>{
