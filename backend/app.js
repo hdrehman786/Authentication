@@ -11,7 +11,7 @@ import userRouter from './midleware/userRoute.js';
 configDotenv();
 const app = express();
 app.use(cors({
-    origin: 'https://authentication-mdyo.vercel.app/',
+    origin: 'https://authentication-mdyo.vercel.app',
     credentials: true,               
   }));
 app.use(express.json());
