@@ -35,7 +35,7 @@ const api = axios.create({
 
 const getUserData = async () => {
   try {
-    const response = await api.get('/user/data');
+    const response = await api.get(`${backendUrl}/user/data`);
     return response.data.user;
   } catch (error) {
     console.error('Error fetching user data:', error.response?.data?.msg || error.message);
